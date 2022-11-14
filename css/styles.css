@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #212121;
+    --primary-color: #212121; 
     --secondary-text-color: #757575;
     --button-bg-color: #2196F3;
     --hover-focus-btn-bg-color: #188CE8;
@@ -20,6 +20,18 @@ body {
     line-height: 1.5;
     background-color: var(--white-color);
 }
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ol,ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
 .list {
     list-style: none;
 }
@@ -29,9 +41,32 @@ body {
 .nav-link {
     color: var(--primary-color);
 }
-
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* header */
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
 .logo {
+    margin-right: 92px;
     font-family: var(--second-fonts);
     font-weight: 700;
     font-size: 26px;
@@ -42,7 +77,9 @@ body {
 .logo-part-header {
     color: var(--logo-secondary-color);
 }
-
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
 .nav-link {
     color: var(--logo-secondary-color);
     font-weight: 500;
@@ -55,6 +92,9 @@ body {
     color: var(--button-bg-color);
 }
 .main-btn {
+    min-width: 216px;
+    min-height: 50px;
+    padding: 10px 32px;
     font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
@@ -94,6 +134,16 @@ body {
     text-decoration: none;
     color: inherit;
 }
+.contacts-list {
+    display: flex;
+    align-items: center;
+}
+.contact-list-mail {
+    margin-right: 50px;
+}
+.contact {
+    margin-left: auto;
+}
 .contacts {
     color: var(--secondary-text-color);
     font-style: normal;
@@ -124,6 +174,9 @@ body {
     font-size: 36px;
     line-height: 1.16;
     color: var(--title-color);
+}
+.employees-section {
+    background-color: var(--btn-bg-color);
 }
 .section-list-text {
     font-size: 14px;
