@@ -33,32 +33,32 @@
         </div>
     </header>
     <main>
-        <section class="hero-section">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="hero-section">
+            <h1 class="hero-title">Ефективні рішення <br> для вашого бізнесу</h1>
             <button type="button" class="main-btn">Замовити послугу</button>
-        </section>
-        <section class="">
+        </div>
+        <section class="section">
             <div class="container">
-                <ul class="list">
-                    <li>
+                <ul class="about-hero list">
+                    <li class="about-hero-card">
                         <h3 class="section-list-title">увага до деталей</h3>
                         <p class="section-list-text">
                             Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                         </p>
                     </li>
-                    <li>
+                    <li class="about-hero-card">
                         <h3 class="section-list-title">пунктуальність</h3>
                         <p class="section-list-text">
                             Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                         </p>
                     </li>
-                    <li>
+                    <li class="about-hero-card">
                         <h3 class="section-list-title">планування</h3>
                         <p class="section-list-text">
                             Так само консультація з широким активом значною мірою зумовлює.
                         </p>
                     </li>
-                    <li>
+                    <li class="about-hero-card">
                         <h3 class="section-list-title">сучасні технології</h3>
                         <p class="section-list-text">
                             Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -67,73 +67,83 @@
                 </ul>
             </div>
         </section>
-        <section class="">
-            <div class="container">
+        <section class="section">
+            <div class="about container">
                 <h2 class="section-title">Чим ми займаємося</h2>
-                <ul class="list">
-                    <li>
+                <ul class="about-list list">
+                    <li class="about-card">
                         <img src="./images/img1.jpg" alt="Робота над версткою" width="370" height="294">
                     </li>
-                    <li>
+                    <li class="about-card">
                         <img src="./images/img2.jpg" alt="Робота над функціоналом застосунку" width="370" height="294">
                     </li>
-                    <li>
+                    <li class="about-card">
                         <img src="./images/img3.jpg" alt="Робота над кольоровою гаммою" width="370" height="294">
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="employees-section">
-            <div class="container">
+        <section class="employees-section section">
+            <div class="employees container">
                 <h2 class="section-title">Наша команда</h2>
-            <ul class="list">
-                <li>
-                    <img src="./images/igor.jpg"
-                        alt="Ігор Дем'яненко" width="270" height="260"
-                    >
-                    <h3 class="section-hero">Ігор Дем'яненко</h3>
-                    <p lang="en" class="section-list-text">Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/olga.jpg" 
-                        alt="Ольга Рєпіна" width="270" height="260"
-                    >   
-                    <h3 class="section-hero">Ольга Рєпіна</h3>
-                    <p lang="en" class="section-text">Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/mykola.jpg" 
-                        alt="Микола Тарасов" width="270" height="260"
-                    >
-                    <h3 class="section-hero">Микола Тарасов</h3>
-                    <p lang="en" class="section-text">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/misha.jpg" 
-                        alt="Михайло Єрмаков" width="270" height="260"
-                    >
-                    <h3 class="section-hero">Михайло Єрмаков</h3>
-                    <p lang="en" class="section-text">UI Designer</p>
-                </li>
-            </ul>
+                <ul class="employees-list list">
+                    <li class="employees-card">
+                        <img src="./images/igor.jpg"
+                            alt="Ігор Дем'яненко" width="270" height="260"
+                        >
+                        <div class="employees-content-wrapper">
+                            <h3 class="section-hero">Ігор Дем'яненко</h3>
+                            <p lang="en" class="section-list-text">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="employees-card">
+                        <img src="./images/olga.jpg" 
+                            alt="Ольга Рєпіна" width="270" height="260"
+                        >
+                        <div class="employees-content-wrapper">
+                           <h3 class="section-hero">Ольга Рєпіна</h3>
+                            <p lang="en" class="section-text">Frontend Developer</p> 
+                        </div>   
+                    </li>
+                    <li class="employees-card">
+                        <img src="./images/mykola.jpg" 
+                            alt="Микола Тарасов" width="270" height="260"
+                        >
+                        <div class="employees-content-wrapper">
+                            <h3 class="section-hero">Микола Тарасов</h3>
+                            <p lang="en" class="section-text">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="employees-card">
+                        <img src="./images/misha.jpg" 
+                            alt="Михайло Єрмаков" width="270" height="260"
+                        >
+                        <div class="employees-content-wrapper">
+                            <h3 class="section-hero">Михайло Єрмаков</h3>
+                            <p lang="en" class="section-text">UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <a class="link logo" href="/"><span lang="en">Web<span class="logo-part-footer">Studio</span></span></a>
-        <address>
-           <ul class="list"> 
-                <li>
-                 <a href="#" class="address">м. Київ, пр-т Лесі Українки, 26</a>
-                </li>
-                <li>
-                    <a href="mailto:info@devstudio.com" class="contacts contact-mail link">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+380961111111" class="contacts contact-number link">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+       <div class="container">
+            <a class="link logo" href="/"><span lang="en">Web<span class="logo-part-footer">Studio</span></span></a>
+            <address>
+            <ul class="list"> 
+                    <li>
+                    <a href="#" class="address">м. Київ, пр-т Лесі Українки, 26</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="contacts contact-mail link">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380961111111" class="contacts contact-number link">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+       </div>
     </footer>
 </body>
 </html>

@@ -14,6 +14,7 @@
 
 }
 body {
+    width: 1600px;
     font-family: var(--primary-fonts);
     font-size: 14px;
     color: var(--primary-color);
@@ -31,6 +32,8 @@ ol,ul {
 }
 img {
     display: block;
+    /* max-width: 100%;
+    height: auto; */
 }
 .list {
     list-style: none;
@@ -48,10 +51,15 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* header */
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-container {
     display: flex;
@@ -60,6 +68,16 @@ img {
 .navigation {
     display: flex;
     align-items: center;
+}
+.gallery-nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery-nav-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
 }
 .nav-list {
     display: flex;
@@ -77,6 +95,12 @@ img {
 .logo-part-header {
     color: var(--logo-secondary-color);
 }
+/* .nav-list-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+} */
 .nav-list-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -92,6 +116,7 @@ img {
     color: var(--button-bg-color);
 }
 .main-btn {
+    margin-bottom: 200px;
     min-width: 216px;
     min-height: 50px;
     padding: 10px 32px;
@@ -154,15 +179,34 @@ img {
 }
 /* main */
 .hero-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1600px;
+    padding-top: 200px;
+    padding-left: 0;
+    padding-right: 0;
     background-color: var(--bg-color);
 }
+
 .hero-title {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     color: var(--white-color);
     text-transform: uppercase;
 
+}
+.about-hero {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.about-hero-card {
+    flex-basis: calc((100%-120px)/4);
+    margin-left: 30px;
+    margin-top: 30px;
 }
 .section-list-title {
     font-size: 14px;
@@ -174,26 +218,92 @@ img {
     font-size: 36px;
     line-height: 1.16;
     color: var(--title-color);
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.employees {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.employees-list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.employees-card {
+    flex-basis: calc((100%-120px)/4);
+    margin-left: 30px;
+    margin-top: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.employees-content-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 70px;
 }
 .employees-section {
     background-color: var(--btn-bg-color);
+}
+.section-hero {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--primary-color)
 }
 .section-list-text {
     font-size: 14px;
     line-height: 1.14;
     color: var(--secondary-text-color);
 }
-.section-hero {
-    font-size: 16px;
-    line-height: 1.18;
-    color: var(--primary-color)
-}
+
 .section-text {
     font-size: 16px;
     line-height: 1.18;
     color: var(--secondary-text-color);
 }
-
+.about {
+    display: flex;
+    flex-direction: column;
+}
+.about-list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.about-card {
+    flex-basis: calc((100%-90px)/3);
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 94px;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.gallery-card {
+    flex-basis: calc((100%-270px)/9);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.gallery-content-wrapper {
+    padding: 20px 24px 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
 .project-title {
     font-size: 18px;
     line-height: 2;
@@ -205,9 +315,12 @@ img {
     color: var(--secondary-text-color);
 
 }
+
 /* footer */
 .footer {
     background-color: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-part-footer {
     color: var(--white-color);
