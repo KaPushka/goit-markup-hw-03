@@ -338,3 +338,7 @@ img {
     color: var(--white-color);
     text-decoration: none;
 }
+.contacts-footer {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
